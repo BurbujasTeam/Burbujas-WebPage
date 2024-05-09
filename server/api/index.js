@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
+const productsRouter = require("../routes/products-route");
 
 const app = express();
 
@@ -16,6 +17,8 @@ app.use("/api/initial", (req, res) => {
     res.status(500).json({ message: error.message });
   }
 });
+
+app.use("/api/V1", productsRouter);
 
 app.use((err, req, res, next) => {
   console.error(err.stack);
