@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div>
+    <div className="bg-[#3498DB]">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
