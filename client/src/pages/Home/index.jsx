@@ -17,7 +17,7 @@ export default function Home() {
   console.log(products);
 
   return (
-    <div className="h-96 flex flex-wrap mt-10 justify-center gap-8 items-center max-w-7xl mx-auto">
+    <div className="flex flex-wrap my-10 justify-center gap-8 items-center max-w-7xl mx-auto">
       {products &&
         products.length > 0 &&
         products.map((item) => <ProductCard key={item.id} item={item} />)}

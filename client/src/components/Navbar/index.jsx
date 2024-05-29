@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <header className="flex justify-between px-6 py-10 bg-[#F39C12] shadow-sm font-nunito font-extrabold">
+    <header className="flex justify-between flex-wrap px-6 py-10 bg-[#F39C12] shadow-sm font-nunito font-extrabold">
       <h1 className="font-bubbles text-4xl text-white text-center w-1/3">
         <NavLink to={"/"} className={""}>
           BURBUJA&apos;S WEBSITE
